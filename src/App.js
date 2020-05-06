@@ -35,6 +35,7 @@ class App extends React.Component {
     fetch(`http://api.openweathermap.org/data/2.5/weather?q=${this.state.inputValue},egypt&appid=e36ed364400282e43250b6c4c0274d44`)
     .then(res => res.json())
     .then(data =>{
+
        this.setState({apiValue:data})
     }
        );
@@ -43,6 +44,20 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
+        <div className = 'nav'>
+          <ul className= 'nav-links'>
+            <li><a>Home</a></li>
+            <li><a>Weahter</a></li>
+          </ul>
+          </div>
+          <div className = 'styling'>
+            <ul>
+              <li ><div className = 'small-circle'></div></li>
+              <li className= 'big-circle-wrapper' ><span >Weather </span><span className = 'big-circle'></span></li>
+            </ul>
+          </div>
+
+        
             <header>
             <div className="heading">
                 <h2>Just type the city name</h2>

@@ -5,6 +5,63 @@
   box-sizing: border-box;
   
 }
+body{
+   background-color: #26293A;
+}
+.App{
+  width:90%;
+  margin:auto;
+  position: relative;
+}
+/* start nav bar*/
+.nav{
+  position: absolute;
+  color: #fff;
+  right: -50px;
+  top: 84px;
+  transform: rotate(90deg) translate(0,-30px);
+}
+  
+
+.nav .nav-links li{
+  display: inline-block;
+  list-style-type: none;
+  margin:10px;
+}
+.styling{
+  position: absolute;
+  right:0;
+  top:35%;
+  color:#fff;
+}
+.styling li{
+  margin:10px;
+}
+.styling li span {
+  padding: 10px;
+}
+.styling .small-circle{
+  width:5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+.styling ul:nth-child(1){
+  transform: translateX(118px);
+}
+.styling .big-circle{
+  width:15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: yellow;
+  display: inline-block;
+}
+.big-circle-wrapper{
+  transform: translate(-90px,0);
+}
+/* end nav bar*/
+
+
 .heading h2{
   font-size: 30px ;
 }
@@ -13,7 +70,7 @@
   margin:15px;
 }
 header{
-  background-color: #26293A;
+
   height: 100vh;
   color: rgb(239,239,240);
   font-size:40px;
@@ -43,7 +100,7 @@ header button{
 header p{
   color:#5B636D;
 }
-ul li div{
+header > ul li div{
   width:100px;
   height: 100px;
   border-radius: 50%;
@@ -53,14 +110,14 @@ ul li div{
   transform: translate(-50%,1%);
 }
 
-ul{
+ ul{
   list-style-type: none;
  
 }
-ul li{
+header > ul li{
   margin:20px;
 }
-ul li:nth-child(2){
+header > ul li:nth-child(2){
   height: 100px;
   margin-left:50px;
   overflow: hidden;
